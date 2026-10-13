@@ -1,0 +1,99 @@
+.user-cell {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 180px;
+}
+
+.user-cell .avatar {
+  width: 39px;
+  height: 39px;
+}
+
+.user-details strong {
+  display: block;
+  color: var(--text);
+  font-size: 12px;
+}
+
+.user-details span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.user-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.detail-card {
+  padding: 17px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.detail-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.detail-card strong {
+  overflow-wrap: anywhere;
+  font-size: 15px;
+}
+
+.user-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.user-profile-header .avatar {
+  width: 64px;
+  height: 64px;
+  font-size: 18px;
+}
+
+.user-profile-header h2 {
+  margin-bottom: 5px;
+}
+
+.user-profile-header p {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.user-tabs {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  margin: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.user-tab {
+  padding: 12px 2px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.user-tab.active {
+  border-bottom-color: var(--primary);
+  color: var(--primary);
+  font-weight: 700;
+}

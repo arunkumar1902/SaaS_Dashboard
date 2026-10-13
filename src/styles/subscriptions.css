@@ -1,0 +1,136 @@
+.subscription-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.subscription-summary-card {
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+  background: #fff;
+}
+
+.subscription-summary-card span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.subscription-summary-card strong {
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.subscription-summary-card small {
+  display: block;
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.subscription-plan {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscription-plan-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.subscription-plan strong {
+  display: block;
+  font-size: 12px;
+}
+
+.subscription-plan span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.billing-cycle {
+  display: inline-flex;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: #f8fafc;
+}
+
+.billing-cycle button {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.billing-cycle button.active {
+  background: #fff;
+  color: var(--primary);
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.1);
+  font-weight: 700;
+}
+
+.subscription-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 23px;
+}
+
+.subscription-timeline::before {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 6px;
+  width: 2px;
+  background: #e5e7eb;
+  content: "";
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item::before {
+  position: absolute;
+  top: 4px;
+  left: -22px;
+  width: 12px;
+  height: 12px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 0 1px #d9d6ff;
+  content: "";
+}
+
+.timeline-item strong {
+  display: block;
+  font-size: 12px;
+}
+
+.timeline-item p {
+  margin: 5px 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.timeline-item time {
+  color: #94a3b8;
+  font-size: 10px;
+}

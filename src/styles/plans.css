@@ -1,0 +1,160 @@
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
+.plan-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  border-color: #c7c3ff;
+}
+
+.plan-card.featured {
+  border: 2px solid var(--primary);
+}
+
+.plan-featured-label {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  padding: 6px 11px;
+  border-radius: 20px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.plan-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.plan-card-header h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.plan-description {
+  min-height: 40px;
+  margin: 12px 0 22px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.plan-price strong {
+  font-size: 34px;
+  letter-spacing: -1px;
+}
+
+.plan-price span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.plan-billing-note {
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.plan-divider {
+  height: 1px;
+  margin-bottom: 20px;
+  background: var(--border);
+}
+
+.plan-features {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 0 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.plan-features li i {
+  margin-top: 2px;
+  color: var(--success);
+}
+
+.plan-features li.unavailable {
+  color: #a3acbb;
+}
+
+.plan-features li.unavailable i {
+  color: #cbd5e1;
+}
+
+.plan-card-actions {
+  display: flex;
+  gap: 9px;
+  margin-top: auto;
+}
+
+.plan-card-actions .btn {
+  flex: 1;
+}
+
+.plan-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 1fr);
+  gap: 22px;
+}
+
+.plan-feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.plan-feature-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f2f7;
+}
+
+.plan-feature-row:last-child {
+  border-bottom: 0;
+}
+
+.plan-feature-row i {
+  color: var(--success);
+}
