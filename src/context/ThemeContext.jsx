@@ -9,7 +9,7 @@ const ThemeContext = createContext(null);
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("saasTheme") || "light";
+    return localStorage.getItem("saasTheme") || "dark";
   });
 
   useEffect(() => {
